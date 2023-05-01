@@ -12,6 +12,5 @@ while True:
         max_tokens = 1000
     )
 
-    reMsg = completion.choices[0].message
-    response = reMsg['content']
+    response = completion.choices[0].message.content
     print(f"{response}\n\n")
